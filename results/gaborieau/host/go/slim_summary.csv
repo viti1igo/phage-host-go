@@ -1,0 +1,4 @@
+group,domain,slim,relations,genes,deepest_terms,pct_deepest_terms_covered,distinct_slim_terms,median_slim_terms_per_gene,genes_only_other
+all,C,goslim_metagenomics,is_a+part_of,1041542,1291841,93.43735026214526,30,1.0,21054
+all,F,goslim_metagenomics,is_a+part_of,1149897,2717058,95.9147357178242,35,2,27990
+all,P,goslim_metagenomics,is_a+part_of,1110595,2031153,92.98295106277075,36,2,25004

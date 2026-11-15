@@ -1,0 +1,673 @@
+go_id	name	domain	longest_depth	shortest_depth	genes_through	genes_deepest
+GO:0000150	DNA strand exchange activity	F	4	4	2	2
+GO:0000166	nucleotide binding	F	4	3	98	11
+GO:0000270	peptidoglycan metabolic process	P	6	6	19	1
+GO:0000271	polysaccharide biosynthetic process	P	6	5	2	1
+GO:0000287	magnesium ion binding	F	6	6	4	4
+GO:0000428	DNA-directed RNA polymerase complex	C	6	4	5	5
+GO:0000510	H3-H4 histone complex chaperone activity	F	4	4	2	0
+GO:0000704	pyrimidine dimer DNA N-glycosylase activity	F	6	5	1	1
+GO:0000819	sister chromatid segregation	P	6	5	2	2
+GO:0001217	DNA-binding transcription repressor activity	F	3	3	1	1
+GO:0001897	symbiont-mediated cytolysis of host cell	P	6	4	20	0
+GO:0001906	cell killing	P	2	2	32	0
+GO:0001907	symbiont-mediated killing of host cell	P	5	4	20	0
+GO:0003674	molecular_function	F	0	0	391	0
+GO:0003676	nucleic acid binding	F	2	2	143	14
+GO:0003677	DNA binding	F	3	3	127	101
+GO:0003678	DNA helicase activity	F	6	3	15	3
+GO:0003689	DNA clamp loader activity	F	5	3	10	10
+GO:0003690	double-stranded DNA binding	F	4	4	9	9
+GO:0003697	single-stranded DNA binding	F	4	4	16	16
+GO:0003700	DNA-binding transcription factor activity	F	2	2	11	5
+GO:0003723	RNA binding	F	3	3	3	3
+GO:0003796	lysozyme activity	F	5	3	16	16
+GO:0003824	catalytic activity	F	1	1	294	1
+GO:0003886	DNA (cytosine-5-)-methyltransferase activity	F	6	5	1	1
+GO:0003887	DNA-directed DNA polymerase activity	F	6	5	18	18
+GO:0003899	DNA-directed RNA polymerase activity	F	7	6	6	6
+GO:0003906	DNA-(apurinic or apyrimidinic site) endonuclease activity	F	6	6	1	0
+GO:0003909	DNA ligase activity	F	4	4	15	0
+GO:0003910	DNA ligase (ATP) activity	F	5	5	15	15
+GO:0003916	DNA topoisomerase activity	F	5	4	7	0
+GO:0003918	DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) activity	F	6	3	7	5
+GO:0003972	RNA ligase (ATP) activity	F	5	5	4	4
+GO:0004132	dCMP deaminase activity	F	5	5	2	2
+GO:0004146	dihydrofolate reductase activity	F	5	5	6	6
+GO:0004170	dUTP diphosphatase activity	F	7	7	1	1
+GO:0004386	helicase activity	F	5	2	21	6
+GO:0004427	inorganic diphosphate phosphatase activity	F	6	6	1	1
+GO:0004514	nicotinate-nucleotide diphosphorylase (carboxylating) activity	F	5	5	2	2
+GO:0004518	nuclease activity	F	3	3	71	7
+GO:0004519	endonuclease activity	F	4	4	49	37
+GO:0004520	DNA endonuclease activity	F	5	5	11	1
+GO:0004521	RNA endonuclease activity	F	5	5	3	0
+GO:0004523	RNA-DNA hybrid ribonuclease activity	F	7	5	3	3
+GO:0004527	exonuclease activity	F	4	4	21	10
+GO:0004529	DNA exonuclease activity	F	5	5	3	0
+GO:0004532	RNA exonuclease activity	F	5	5	1	0
+GO:0004534	5'-3' RNA exonuclease activity	F	7	6	1	1
+GO:0004536	DNA nuclease activity	F	4	4	14	1
+GO:0004540	RNA nuclease activity	F	4	4	3	0
+GO:0004553	hydrolase activity, hydrolyzing O-glycosyl compounds	F	4	4	21	0
+GO:0004568	chitinase activity	F	5	5	1	1
+GO:0004672	protein kinase activity	F	5	3	1	0
+GO:0004674	protein serine/threonine kinase activity	F	6	4	1	0
+GO:0004676	3-phosphoinositide-dependent protein kinase activity	F	7	5	1	1
+GO:0004677	DNA-dependent protein kinase activity	F	7	5	1	1
+GO:0004679	AMP-activated protein kinase activity	F	7	5	1	1
+GO:0004711	ribosomal protein S6 kinase activity	F	7	5	1	1
+GO:0004721	phosphoprotein phosphatase activity	F	6	3	1	0
+GO:0004722	protein serine/threonine phosphatase activity	F	7	4	1	0
+GO:0004723	calcium-dependent protein serine/threonine phosphatase activity	F	8	5	1	0
+GO:0004748	ribonucleoside-diphosphate reductase activity, thioredoxin disulfide as acceptor	F	6	6	11	11
+GO:0004797	thymidine kinase activity	F	7	7	5	5
+GO:0004799	thymidylate synthase activity	F	6	6	2	2
+GO:0004857	enzyme inhibitor activity	F	3	3	2	0
+GO:0005198	structural molecule activity	F	1	1	8	8
+GO:0005488	binding	F	1	1	232	0
+GO:0005515	protein binding	F	2	2	5	0
+GO:0005524	ATP binding	F	8	4	78	78
+GO:0005575	cellular_component	C	0	0	175	0
+GO:0005576	extracellular region	C	2	2	7	7
+GO:0005622	intracellular anatomical structure	C	2	2	5	0
+GO:0005667	transcription regulator complex	C	2	2	1	0
+GO:0005737	cytoplasm	C	3	2	5	0
+GO:0005829	cytosol	C	4	2	5	1
+GO:0005971	ribonucleoside-diphosphate reductase complex	C	5	3	4	4
+GO:0005975	carbohydrate metabolic process	P	4	4	3	1
+GO:0005976	polysaccharide metabolic process	P	5	4	2	0
+GO:0006022	aminoglycan metabolic process	P	4	4	20	0
+GO:0006026	aminoglycan catabolic process	P	5	5	19	0
+GO:0006027	glycosaminoglycan catabolic process	P	6	6	18	0
+GO:0006030	chitin metabolic process	P	5	5	1	0
+GO:0006032	chitin catabolic process	P	7	6	1	1
+GO:0006040	amino sugar metabolic process	P	4	4	1	0
+GO:0006108	malate metabolic process	P	7	7	1	1
+GO:0006139	nucleobase-containing compound metabolic process	P	4	4	145	0
+GO:0006163	purine nucleotide metabolic process	P	8	4	2	0
+GO:0006164	purine nucleotide biosynthetic process	P	9	5	2	0
+GO:0006213	pyrimidine nucleoside metabolic process	P	7	4	1	0
+GO:0006220	pyrimidine nucleotide metabolic process	P	8	4	7	2
+GO:0006221	pyrimidine nucleotide biosynthetic process	P	9	5	5	0
+GO:0006226	dUMP biosynthetic process	P	11	7	1	1
+GO:0006231	dTMP biosynthetic process	P	11	7	4	4
+GO:0006235	dTTP biosynthetic process	P	11	7	1	1
+GO:0006244	pyrimidine nucleotide catabolic process	P	9	5	1	0
+GO:0006259	DNA metabolic process	P	6	5	117	0
+GO:0006260	DNA replication	P	7	6	77	51
+GO:0006261	DNA-templated DNA replication	P	8	7	26	13
+GO:0006265	DNA topological change	P	7	6	7	7
+GO:0006269	DNA replication, synthesis of primer	P	9	7	10	10
+GO:0006271	DNA strand elongation involved in DNA replication	P	9	7	3	0
+GO:0006273	lagging strand elongation	P	10	8	3	0
+GO:0006281	DNA repair	P	7	5	35	30
+GO:0006298	mismatch repair	P	8	6	1	1
+GO:0006302	double-strand break repair	P	8	6	4	4
+GO:0006304	DNA modification	P	7	5	9	3
+GO:0006310	DNA recombination	P	7	6	32	29
+GO:0006314	intron homing	P	8	7	3	3
+GO:0006351	DNA-templated transcription	P	8	6	7	5
+GO:0006352	DNA-templated transcription initiation	P	9	7	1	1
+GO:0006353	DNA-templated transcription termination	P	9	7	1	1
+GO:0006355	regulation of DNA-templated transcription	P	9	8	7	4
+GO:0006401	RNA catabolic process	P	7	6	1	0
+GO:0006417	regulation of translation	P	9	7	1	1
+GO:0006508	proteolysis	P	5	5	13	11
+GO:0006520	amino acid metabolic process	P	4	4	1	0
+GO:0006575	modified amino acid metabolic process	P	3	3	6	0
+GO:0006629	lipid metabolic process	P	4	4	1	0
+GO:0006730	one-carbon metabolic process	P	4	4	6	6
+GO:0006753	nucleoside phosphate metabolic process	P	6	5	19	0
+GO:0006760	folic acid-containing compound metabolic process	P	4	4	6	0
+GO:0006793	phosphorus metabolic process	P	3	3	19	0
+GO:0006796	phosphate-containing compound metabolic process	P	3	3	1	1
+GO:0006950	response to stress	P	2	2	60	1
+GO:0006952	defense response	P	3	3	25	0
+GO:0006974	DNA damage response	P	4	4	35	0
+GO:0006996	organelle organization	P	4	4	12	0
+GO:0007049	cell cycle	P	2	2	2	0
+GO:0007059	chromosome segregation	P	4	3	2	0
+GO:0007154	cell communication	P	2	2	2	2
+GO:0008047	enzyme activator activity	F	3	3	4	0
+GO:0008080	N-acetyltransferase activity	F	6	6	1	0
+GO:0008094	ATP-dependent activity, acting on DNA	F	4	2	32	0
+GO:0008150	biological_process	P	0	0	348	0
+GO:0008152	metabolic process	P	2	2	196	0
+GO:0008168	methyltransferase activity	F	4	4	14	3
+GO:0008233	peptidase activity	F	3	3	11	7
+GO:0008234	cysteine-type peptidase activity	F	4	4	2	2
+GO:0008236	serine-type peptidase activity	F	4	4	2	2
+GO:0008237	metallopeptidase activity	F	4	4	2	2
+GO:0008252	nucleotidase activity	F	6	6	1	0
+GO:0008253	5'-nucleotidase activity	F	7	7	1	1
+GO:0008270	zinc ion binding	F	7	7	14	14
+GO:0008296	3'-5'-DNA exonuclease activity	F	7	6	1	0
+GO:0008297	single-stranded DNA exodeoxyribonuclease activity	F	7	7	1	0
+GO:0008309	double-stranded DNA exodeoxyribonuclease activity	F	7	7	2	0
+GO:0008310	single-stranded DNA 3'-5' DNA exonuclease activity	F	8	7	1	1
+GO:0008408	3'-5' exonuclease activity	F	5	5	8	7
+GO:0008409	5'-3' exonuclease activity	F	5	5	3	0
+GO:0008420	RNA polymerase II CTD heptapeptide repeat phosphatase activity	F	8	4	1	0
+GO:0008452	RNA ligase activity	F	4	4	4	0
+GO:0008460	dTDP-glucose 4,6-dehydratase activity	F	5	5	1	1
+GO:0008610	lipid biosynthetic process	P	5	4	1	0
+GO:0008653	lipopolysaccharide metabolic process	P	6	4	1	0
+GO:0008745	N-acetylmuramoyl-L-alanine amidase activity	F	5	3	3	3
+GO:0008757	S-adenosylmethionine-dependent methyltransferase activity	F	5	5	7	0
+GO:0008796	bis(5'-nucleosyl)-tetraphosphatase activity	F	6	6	1	0
+GO:0008803	bis(5'-nucleosyl)-tetraphosphatase (symmetrical) activity	F	7	7	1	1
+GO:0008821	crossover junction DNA endonuclease activity	F	7	5	1	1
+GO:0008830	dTDP-4-dehydrorhamnose 3,5-epimerase activity	F	5	5	1	1
+GO:0008831	dTDP-4-dehydrorhamnose reductase activity	F	5	5	1	1
+GO:0008833	deoxyribonuclease IV (phage-T4-induced) activity	F	7	5	3	3
+GO:0008861	formate C-acetyltransferase activity	F	7	7	1	1
+GO:0008879	glucose-1-phosphate thymidylyltransferase activity	F	5	5	1	1
+GO:0008907	integrase activity	F	4	4	1	1
+GO:0008933	peptidoglycan lytic transglycosylase activity	F	5	3	2	2
+GO:0008998	ribonucleoside-triphosphate reductase (thioredoxin) activity	F	5	5	4	4
+GO:0009007	site-specific DNA-methyltransferase (adenine-specific) activity	F	6	5	6	6
+GO:0009008	DNA-methyltransferase activity	F	5	4	7	0
+GO:0009056	catabolic process	P	3	3	22	0
+GO:0009057	macromolecule catabolic process	P	4	4	20	0
+GO:0009058	biosynthetic process	P	3	3	93	0
+GO:0009059	macromolecule biosynthetic process	P	4	4	63	0
+GO:0009072	aromatic amino acid metabolic process	P	6	5	1	0
+GO:0009073	aromatic amino acid biosynthetic process	P	7	6	1	1
+GO:0009103	lipopolysaccharide biosynthetic process	P	7	5	1	0
+GO:0009116	nucleoside metabolic process	P	6	4	1	0
+GO:0009117	nucleotide metabolic process	P	7	6	15	0
+GO:0009120	2'-deoxyribonucleoside metabolic process	P	7	5	1	0
+GO:0009123	nucleoside monophosphate metabolic process	P	7	6	5	0
+GO:0009124	nucleoside monophosphate biosynthetic process	P	8	6	5	0
+GO:0009129	pyrimidine nucleoside monophosphate metabolic process	P	8	7	5	0
+GO:0009130	pyrimidine nucleoside monophosphate biosynthetic process	P	9	7	5	0
+GO:0009147	pyrimidine nucleoside triphosphate metabolic process	P	7	6	2	0
+GO:0009148	pyrimidine nucleoside triphosphate biosynthetic process	P	8	6	1	0
+GO:0009149	pyrimidine nucleoside triphosphate catabolic process	P	8	6	1	0
+GO:0009157	deoxyribonucleoside monophosphate biosynthetic process	P	9	7	5	0
+GO:0009165	nucleotide biosynthetic process	P	8	6	14	3
+GO:0009166	nucleotide catabolic process	P	8	6	1	0
+GO:0009176	pyrimidine deoxyribonucleoside monophosphate metabolic process	P	9	8	5	0
+GO:0009177	pyrimidine deoxyribonucleoside monophosphate biosynthetic process	P	10	8	5	0
+GO:0009200	deoxyribonucleoside triphosphate metabolic process	P	9	5	2	0
+GO:0009202	deoxyribonucleoside triphosphate biosynthetic process	P	10	6	1	0
+GO:0009204	deoxyribonucleoside triphosphate catabolic process	P	10	6	1	0
+GO:0009211	pyrimidine deoxyribonucleoside triphosphate metabolic process	P	8	7	2	0
+GO:0009212	pyrimidine deoxyribonucleoside triphosphate biosynthetic process	P	9	7	1	0
+GO:0009213	pyrimidine deoxyribonucleoside triphosphate catabolic process	P	9	7	1	0
+GO:0009219	pyrimidine deoxyribonucleotide metabolic process	P	9	5	5	0
+GO:0009221	pyrimidine deoxyribonucleotide biosynthetic process	P	10	6	5	0
+GO:0009223	pyrimidine deoxyribonucleotide catabolic process	P	10	6	1	0
+GO:0009225	nucleotide-sugar metabolic process	P	7	4	4	0
+GO:0009226	nucleotide-sugar biosynthetic process	P	8	5	4	0
+GO:0009243	O antigen biosynthetic process	P	8	6	1	1
+GO:0009253	peptidoglycan catabolic process	P	7	7	18	18
+GO:0009262	deoxyribonucleotide metabolic process	P	3	3	8	0
+GO:0009263	deoxyribonucleotide biosynthetic process	P	4	4	7	7
+GO:0009264	deoxyribonucleotide catabolic process	P	4	4	1	1
+GO:0009265	2'-deoxyribonucleotide biosynthetic process	P	9	5	9	4
+GO:0009295	nucleoid	C	2	2	1	1
+GO:0009307	DNA restriction-modification system	P	9	6	6	6
+GO:0009378	four-way junction helicase activity	F	7	4	2	2
+GO:0009394	2'-deoxyribonucleotide metabolic process	P	8	4	9	0
+GO:0009396	folic acid-containing compound biosynthetic process	P	5	5	6	0
+GO:0009435	NAD+ biosynthetic process	P	11	6	2	2
+GO:0009605	response to external stimulus	P	2	2	32	0
+GO:0009607	response to biotic stimulus	P	2	2	32	0
+GO:0009617	response to bacterium	P	5	3	19	0
+GO:0009889	regulation of biosynthetic process	P	5	5	8	0
+GO:0009890	negative regulation of biosynthetic process	P	6	6	3	0
+GO:0009892	negative regulation of metabolic process	P	5	5	3	0
+GO:0009987	cellular process	P	1	1	215	0
+GO:0010467	gene expression	P	5	5	9	0
+GO:0010468	regulation of gene expression	P	7	7	8	0
+GO:0010556	regulation of macromolecule biosynthetic process	P	6	6	8	0
+GO:0010558	negative regulation of macromolecule biosynthetic process	P	7	7	3	0
+GO:0010605	negative regulation of macromolecule metabolic process	P	6	6	3	0
+GO:0010608	post-transcriptional regulation of gene expression	P	8	8	1	0
+GO:0015074	DNA integration	P	7	6	4	4
+GO:0015616	DNA translocase activity	F	5	3	2	0
+GO:0015666	restriction endodeoxyribonuclease activity	F	6	4	1	0
+GO:0016020	membrane	C	2	2	22	21
+GO:0016032	viral process	P	1	1	190	2
+GO:0016043	cellular component organization	P	3	3	13	0
+GO:0016051	carbohydrate biosynthetic process	P	5	4	2	0
+GO:0016070	RNA metabolic process	P	6	5	21	0
+GO:0016301	kinase activity	F	4	4	15	5
+GO:0016407	acetyltransferase activity	F	5	5	3	1
+GO:0016453	C-acetyltransferase activity	F	6	6	1	0
+GO:0016462	pyrophosphatase activity	F	5	5	26	0
+GO:0016485	protein processing	P	7	6	2	0
+GO:0016491	oxidoreductase activity	F	2	2	23	1
+GO:0016539	intein-mediated protein splicing	P	9	8	2	2
+GO:0016614	oxidoreductase activity, acting on CH-OH group of donors	F	3	3	2	0
+GO:0016615	malate dehydrogenase activity	F	4	4	1	1
+GO:0016616	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	F	4	4	1	0
+GO:0016645	oxidoreductase activity, acting on the CH-NH group of donors	F	3	3	6	0
+GO:0016646	oxidoreductase activity, acting on the CH-NH group of donors, NAD or NADP as acceptor	F	4	4	6	0
+GO:0016725	oxidoreductase activity, acting on CH or CH2 groups	F	3	3	14	0
+GO:0016728	oxidoreductase activity, acting on CH or CH2 groups, disulfide as acceptor	F	4	4	14	0
+GO:0016740	transferase activity	F	2	2	81	3
+GO:0016741	transferase activity, transferring one-carbon groups	F	3	3	15	0
+GO:0016742	hydroxymethyl-, formyl- and related transferase activity	F	4	4	1	0
+GO:0016746	acyltransferase activity	F	3	3	3	0
+GO:0016747	acyltransferase activity, transferring groups other than amino-acyl groups	F	4	4	3	0
+GO:0016757	glycosyltransferase activity	F	3	3	15	2
+GO:0016758	hexosyltransferase activity	F	4	4	2	0
+GO:0016763	pentosyltransferase activity	F	4	4	11	0
+GO:0016772	transferase activity, transferring phosphorus-containing groups	F	3	3	53	0
+GO:0016773	phosphotransferase activity, alcohol group as acceptor	F	4	4	2	0
+GO:0016776	phosphotransferase activity, phosphate group as acceptor	F	4	4	3	0
+GO:0016779	nucleotidyltransferase activity	F	4	4	38	13
+GO:0016787	hydrolase activity	F	2	2	128	29
+GO:0016788	hydrolase activity, acting on ester bonds	F	3	3	37	6
+GO:0016791	phosphatase activity	F	5	5	3	0
+GO:0016798	hydrolase activity, acting on glycosyl bonds	F	3	3	23	1
+GO:0016799	hydrolase activity, hydrolyzing N-glycosyl compounds	F	4	4	1	0
+GO:0016810	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds	F	3	3	5	0
+GO:0016811	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides	F	4	4	3	0
+GO:0016814	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amidines	F	4	4	2	0
+GO:0016817	hydrolase activity, acting on acid anhydrides	F	3	3	26	0
+GO:0016818	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides	F	4	4	26	0
+GO:0016829	lyase activity	F	2	2	9	3
+GO:0016830	carbon-carbon lyase activity	F	3	3	1	0
+GO:0016832	aldehyde-lyase activity	F	4	4	1	1
+GO:0016835	carbon-oxygen lyase activity	F	3	3	4	0
+GO:0016836	hydro-lyase activity	F	4	4	1	0
+GO:0016837	carbon-oxygen lyase activity, acting on polysaccharides	F	4	4	2	0
+GO:0016846	carbon-sulfur lyase activity	F	3	3	1	0
+GO:0016853	isomerase activity	F	2	2	30	0
+GO:0016854	racemase and epimerase activity	F	3	3	1	0
+GO:0016857	racemase and epimerase activity, acting on carbohydrates and derivatives	F	4	4	1	0
+GO:0016860	intramolecular oxidoreductase activity	F	3	3	1	0
+GO:0016861	intramolecular oxidoreductase activity, interconverting aldoses and ketoses	F	4	4	1	0
+GO:0016874	ligase activity	F	2	2	20	1
+GO:0016886	ligase activity, forming phosphoric ester bonds	F	3	3	19	0
+GO:0016887	ATP hydrolysis activity	F	7	2	21	21
+GO:0016888	DNA endonuclease activity, producing 5'-phosphomonoesters	F	6	4	6	0
+GO:0016889	DNA endonuclease activity, producing 3'-phosphomonoesters	F	6	4	1	0
+GO:0016891	RNA endonuclease activity producing 5'-phosphomonoesters, hydrolytic mechanism	F	6	4	3	0
+GO:0016895	DNA exonuclease activity, producing 5'-phosphomonoesters	F	6	6	3	0
+GO:0016896	RNA exonuclease activity, producing 5'-phosphomonoesters	F	6	6	1	0
+GO:0016987	sigma factor activity	F	3	3	5	5
+GO:0016996	endo-alpha-(2,8)-sialidase activity	F	6	6	4	4
+GO:0016997	alpha-sialidase activity	F	5	5	4	0
+GO:0016998	cell wall macromolecule catabolic process	P	5	4	15	15
+GO:0017018	myosin phosphatase activity	F	8	5	1	1
+GO:0017053	transcription repressor complex	C	3	3	1	1
+GO:0017076	purine nucleotide binding	F	5	4	85	0
+GO:0017108	5'-flap endonuclease activity	F	7	5	3	3
+GO:0017111	ribonucleoside triphosphate phosphatase activity	F	6	6	21	0
+GO:0017116	single-stranded DNA helicase activity	F	7	4	3	1
+GO:0017171	serine hydrolase activity	F	3	3	2	0
+GO:0018995	host cellular component	C	3	3	39	0
+GO:0019028	viral capsid	C	2	2	26	14
+GO:0019030	icosahedral viral capsid	C	3	3	3	0
+GO:0019042	viral latency	P	2	2	2	0
+GO:0019043	establishment of viral latency	P	3	2	1	0
+GO:0019045	latent virus replication	P	3	2	2	0
+GO:0019046	release from viral latency	P	4	2	2	0
+GO:0019058	viral life cycle	P	2	2	169	2
+GO:0019062	virion attachment to host cell	P	6	3	22	5
+GO:0019068	virion assembly	P	3	2	53	0
+GO:0019069	viral capsid assembly	P	4	2	5	3
+GO:0019072	viral genome packaging	P	4	2	12	4
+GO:0019073	viral DNA genome packaging	P	5	3	8	8
+GO:0019075	virus maturation	P	3	2	2	0
+GO:0019076	viral release from host cell	P	5	2	33	13
+GO:0019079	viral genome replication	P	3	2	47	0
+GO:0019080	viral gene expression	P	2	2	18	0
+GO:0019081	viral translation	P	3	2	2	0
+GO:0019083	viral transcription	P	3	2	16	7
+GO:0019086	late viral transcription	P	4	3	8	8
+GO:0019104	DNA N-glycosylase activity	F	5	4	1	0
+GO:0019134	glucosamine-1-phosphate N-acetyltransferase activity	F	7	7	1	1
+GO:0019136	deoxynucleoside kinase activity	F	6	6	5	0
+GO:0019146	arabinose-5-phosphate isomerase activity	F	5	5	1	1
+GO:0019205	nucleobase-containing compound kinase activity	F	5	5	9	0
+GO:0019219	regulation of nucleobase-containing compound metabolic process	P	6	6	7	0
+GO:0019222	regulation of metabolic process	P	4	4	8	0
+GO:0019239	deaminase activity	F	4	4	2	0
+GO:0019305	dTDP-rhamnose biosynthetic process	P	9	6	4	4
+GO:0019359	nicotinamide nucleotide biosynthetic process	P	10	5	2	0
+GO:0019363	pyridine nucleotide biosynthetic process	P	9	5	2	0
+GO:0019538	protein metabolic process	P	4	4	14	0
+GO:0019637	organophosphate metabolic process	P	4	4	19	0
+GO:0019674	NAD+ metabolic process	P	9	5	2	0
+GO:0019752	carboxylic acid metabolic process	P	5	5	2	0
+GO:0019835	cytolysis	P	2	2	20	0
+GO:0019867	outer membrane	C	3	3	1	1
+GO:0020002	host cell plasma membrane	C	6	6	18	18
+GO:0022402	cell cycle process	P	3	2	2	0
+GO:0022607	cellular component assembly	P	4	4	2	0
+GO:0022616	DNA strand elongation	P	7	6	3	0
+GO:0030203	glycosaminoglycan metabolic process	P	5	5	19	0
+GO:0030234	enzyme regulator activity	F	2	2	6	0
+GO:0030246	carbohydrate binding	F	2	2	2	2
+GO:0030337	DNA polymerase processivity factor activity	F	4	4	4	4
+GO:0030414	peptidase inhibitor activity	F	4	4	2	2
+GO:0030430	host cell cytoplasm	C	7	6	12	12
+GO:0030554	adenyl nucleotide binding	F	6	5	85	0
+GO:0030880	RNA polymerase complex	C	5	3	5	0
+GO:0030908	protein splicing	P	8	7	2	0
+GO:0031427	response to methotrexate	P	4	4	2	2
+GO:0031554	regulation of termination of DNA-templated transcription	P	9	6	1	0
+GO:0031640	killing of cells of another organism	P	4	3	32	12
+GO:0032067	type IV site-specific deoxyribonuclease activity	F	7	5	1	1
+GO:0032259	methylation	P	3	3	2	2
+GO:0032359	provirus excision	P	5	3	2	2
+GO:0032553	ribonucleotide binding	F	5	3	78	0
+GO:0032555	purine ribonucleotide binding	F	6	4	78	0
+GO:0032559	adenyl ribonucleotide binding	F	7	5	78	0
+GO:0032774	RNA biosynthetic process	P	7	6	17	0
+GO:0032784	regulation of DNA-templated transcription elongation	P	10	9	1	0
+GO:0032785	negative regulation of DNA-templated transcription, elongation	P	11	10	1	1
+GO:0032897	negative regulation of viral transcription	P	5	5	3	3
+GO:0032991	protein-containing complex	C	1	1	22	2
+GO:0033192	calmodulin-dependent protein phosphatase activity	F	9	6	1	1
+GO:0033549	MAP kinase phosphatase activity	F	7	4	1	0
+GO:0033554	cellular response to stress	P	3	3	35	0
+GO:0033567	DNA replication, Okazaki fragment processing	P	11	6	3	3
+GO:0033643	host cell part	C	4	4	39	0
+GO:0033644	host cell membrane	C	5	5	21	3
+GO:0033646	host intracellular part	C	6	5	12	0
+GO:0033820	DNA alpha-glucosyltransferase activity	F	6	4	1	1
+GO:0033821	DNA beta-glucosyltransferase activity	F	6	4	1	1
+GO:0033892	deoxyribonuclease (pyrimidine dimer) activity	F	6	4	1	1
+GO:0033922	peptidoglycan beta-N-acetylmuramidase activity	F	5	5	1	1
+GO:0033959	deoxyribodipyrimidine endonucleosidase activity	F	5	4	1	1
+GO:0034061	DNA polymerase activity	F	5	4	18	0
+GO:0034062	5'-3' RNA polymerase activity	F	6	5	6	0
+GO:0034335	DNA negative supercoiling activity	F	7	4	2	2
+GO:0034654	nucleobase-containing compound biosynthetic process	P	5	4	78	0
+GO:0034655	nucleobase-containing compound catabolic process	P	5	4	2	0
+GO:0035173	histone kinase activity	F	6	4	1	0
+GO:0035175	histone H3S10 kinase activity	F	8	5	1	1
+GO:0035312	5'-3' DNA exonuclease activity	F	7	6	2	0
+GO:0035402	histone H3T11 kinase activity	F	8	5	1	1
+GO:0035403	histone H3T6 kinase activity	F	8	5	1	1
+GO:0035639	purine ribonucleoside triphosphate binding	F	3	3	78	0
+GO:0035821	modulation of process of another organism	P	2	2	24	0
+GO:0035891	exit from host cell	P	4	4	33	0
+GO:0035979	histone H2AXS139 kinase activity	F	8	5	1	1
+GO:0036094	small molecule binding	F	2	2	135	0
+GO:0036121	double-stranded DNA helicase activity	F	7	4	2	2
+GO:0036211	protein modification process	P	5	5	1	0
+GO:0039504	symbiont-mediated suppression of host adaptive immune response	P	8	7	1	1
+GO:0039620	T=7 icosahedral viral capsid	C	4	4	1	1
+GO:0039621	T=13 icosahedral viral capsid	C	4	4	2	2
+GO:0039653	symbiont-mediated suppression of host transcription	P	8	7	2	2
+GO:0039656	symbiont-mediated perturbation of host gene expression	P	6	5	8	0
+GO:0039657	symbiont-mediated suppression of host gene expression	P	7	6	7	7
+GO:0039678	symbiont genome ejection through host cell envelope	P	6	2	23	1
+GO:0039686	bidirectional double-stranded viral DNA replication	P	9	4	14	14
+GO:0039693	viral DNA genome replication	P	8	3	47	28
+GO:0039695	DNA-templated viral transcription	P	4	3	1	1
+GO:0042083	5,10-methylenetetrahydrofolate-dependent methyltransferase activity	F	5	5	4	0
+GO:0042221	response to chemical	P	2	2	3	0
+GO:0042245	RNA repair	P	7	6	2	2
+GO:0042268	regulation of cytolysis	P	4	4	1	0
+GO:0042398	modified amino acid biosynthetic process	P	4	4	6	0
+GO:0042558	pteridine-containing compound metabolic process	P	3	3	6	0
+GO:0042559	pteridine-containing compound biosynthetic process	P	4	4	6	0
+GO:0042578	phosphoric ester hydrolase activity	F	4	4	3	0
+GO:0042742	defense response to bacterium	P	6	4	19	19
+GO:0042783	symbiont-mediated evasion of host immune response	P	8	6	8	0
+GO:0042802	identical protein binding	F	3	3	5	5
+GO:0043137	DNA replication, removal of RNA primer	P	8	7	1	1
+GO:0043138	3'-5' DNA helicase activity	F	7	4	4	2
+GO:0043139	5'-3' DNA helicase activity	F	7	4	8	8
+GO:0043167	ion binding	F	3	3	123	0
+GO:0043168	anion binding	F	4	4	82	0
+GO:0043169	cation binding	F	4	4	54	0
+GO:0043170	macromolecule metabolic process	P	3	3	162	0
+GO:0043207	response to external biotic stimulus	P	3	3	32	0
+GO:0043242	negative regulation of protein-containing complex disassembly	P	6	6	1	0
+GO:0043244	regulation of protein-containing complex disassembly	P	5	5	1	0
+GO:0043364	glycyl-radical enzyme activating activity	F	3	3	1	0
+GO:0043365	[formate-C-acetyltransferase]-activating enzyme activity	F	4	4	1	1
+GO:0043412	macromolecule modification	P	4	4	10	0
+GO:0043436	oxoacid metabolic process	P	4	4	2	0
+GO:0043493	viral terminase complex	C	2	2	6	1
+GO:0043565	sequence-specific DNA binding	F	4	4	2	2
+GO:0043648	dicarboxylic acid metabolic process	P	6	6	1	0
+GO:0043656	host intracellular region	C	5	5	12	0
+GO:0044003	symbiont-mediated perturbation of host process	P	4	3	24	0
+GO:0044022	histone H3S28 kinase activity	F	8	5	1	1
+GO:0044023	histone H4S1 kinase activity	F	8	5	1	1
+GO:0044024	histone H2AS1 kinase activity	F	8	5	1	1
+GO:0044025	histone H2BS14 kinase activity	F	8	5	1	1
+GO:0044036	cell wall macromolecule metabolic process	P	4	3	15	0
+GO:0044068	symbiont-mediated perturbation of host cellular process	P	5	4	12	0
+GO:0044071	symbiont-mediated perturbation of host cell cycle progression	P	6	5	3	3
+GO:0044085	cellular component biogenesis	P	3	3	2	0
+GO:0044183	protein folding chaperone	F	1	1	2	2
+GO:0044217	other organism part	C	2	2	39	0
+GO:0044229	host cell periplasmic space	C	5	5	7	7
+GO:0044238	primary metabolic process	P	3	3	160	0
+GO:0044281	small molecule metabolic process	P	3	3	28	0
+GO:0044283	small molecule biosynthetic process	P	4	4	1	0
+GO:0044355	clearance of foreign intracellular DNA	P	8	6	6	0
+GO:0044403	biological process involved in symbiotic interaction	P	2	2	112	0
+GO:0044406	adhesion of symbiont to host	P	4	4	22	0
+GO:0044409	symbiont entry into host	P	4	4	56	0
+GO:0044419	biological process involved in interspecies interaction between organisms	P	1	1	123	0
+GO:0044423	virion component	C	1	1	119	24
+GO:0044650	adhesion of symbiont to host cell	P	5	5	22	0
+GO:0044659	viral release from host cell by cytolysis	P	7	3	20	20
+GO:0044826	viral genome integration into host DNA	P	3	2	1	1
+GO:0044865	symbiont-mediated suppression of host cell division	P	6	5	1	1
+GO:0045892	negative regulation of DNA-templated transcription	P	10	9	3	1
+GO:0045918	negative regulation of cytolysis	P	5	5	1	1
+GO:0045934	negative regulation of nucleobase-containing compound metabolic process	P	7	6	3	0
+GO:0046073	dTMP metabolic process	P	10	6	4	0
+GO:0046075	dTTP metabolic process	P	10	6	1	0
+GO:0046078	dUMP metabolic process	P	10	6	1	0
+GO:0046080	dUTP metabolic process	P	10	6	1	0
+GO:0046081	dUTP catabolic process	P	11	7	1	1
+GO:0046104	thymidine metabolic process	P	9	6	1	1
+GO:0046125	pyrimidine deoxyribonucleoside metabolic process	P	8	5	1	0
+GO:0046348	amino sugar catabolic process	P	5	5	1	0
+GO:0046385	deoxyribose phosphate biosynthetic process	P	6	5	9	0
+GO:0046386	deoxyribose phosphate catabolic process	P	6	5	1	0
+GO:0046394	carboxylic acid biosynthetic process	P	6	5	1	0
+GO:0046404	ATP-dependent polydeoxyribonucleotide 5'-hydroxyl-kinase activity	F	8	7	1	1
+GO:0046434	organophosphate catabolic process	P	5	4	1	0
+GO:0046496	nicotinamide nucleotide metabolic process	P	8	4	2	0
+GO:0046527	glucosyltransferase activity	F	5	5	2	0
+GO:0046653	tetrahydrofolate metabolic process	P	5	5	6	0
+GO:0046654	tetrahydrofolate biosynthetic process	P	6	6	6	6
+GO:0046677	response to antibiotic	P	3	3	3	3
+GO:0046718	symbiont entry into host cell	P	5	3	56	18
+GO:0046782	regulation of viral transcription	P	4	4	9	6
+GO:0046797	viral procapsid maturation	P	5	3	2	2
+GO:0046798	viral portal complex	C	3	2	4	4
+GO:0046813	receptor-mediated virion attachment to host cell	P	7	4	17	0
+GO:0046872	metal ion binding	F	5	5	53	35
+GO:0046914	transition metal ion binding	F	6	6	14	0
+GO:0047153	deoxycytidylate 5-hydroxymethyltransferase activity	F	5	5	1	1
+GO:0047429	nucleoside triphosphate diphosphatase activity	F	6	6	3	0
+GO:0047507	deoxynucleoside phosphate kinase activity, ATP as phosphate donor	F	6	5	3	3
+GO:0047625	S-adenosyl-L-methionine lyase activity	F	4	4	1	1
+GO:0047840	dCTP diphosphatase activity	F	7	7	2	2
+GO:0047846	deoxynucleotide 3'-phosphatase activity	F	6	6	1	1
+GO:0048256	flap endonuclease activity	F	6	4	3	0
+GO:0048519	negative regulation of biological process	P	3	3	7	0
+GO:0048523	negative regulation of cellular process	P	4	4	4	0
+GO:0048525	negative regulation of viral process	P	4	4	3	0
+GO:0050660	flavin adenine dinucleotide binding	F	5	4	2	2
+GO:0050661	NADP binding	F	7	6	5	5
+GO:0050789	regulation of biological process	P	2	2	19	0
+GO:0050792	regulation of viral process	P	3	3	10	1
+GO:0050794	regulation of cellular process	P	3	3	9	0
+GO:0050797	thymidylate synthase (FAD) activity	F	6	6	2	2
+GO:0050896	response to stimulus	P	1	1	70	0
+GO:0051128	regulation of cellular component organization	P	4	4	1	0
+GO:0051129	negative regulation of cellular component organization	P	5	5	1	0
+GO:0051246	regulation of protein metabolic process	P	6	6	1	0
+GO:0051252	regulation of RNA metabolic process	P	7	6	7	0
+GO:0051253	negative regulation of RNA metabolic process	P	8	7	3	0
+GO:0051276	chromosome organization	P	5	5	12	5
+GO:0051287	NAD binding	F	7	6	2	0
+GO:0051536	iron-sulfur cluster binding	F	4	4	3	2
+GO:0051539	4 iron, 4 sulfur cluster binding	F	5	5	1	1
+GO:0051540	metal cluster binding	F	3	3	3	0
+GO:0051604	protein maturation	P	6	5	2	0
+GO:0051701	biological process involved in interaction with host	P	3	3	112	2
+GO:0051707	response to other organism	P	4	2	32	0
+GO:0051715	cytolysis in another organism	P	5	3	20	0
+GO:0051716	cellular response to stimulus	P	2	2	35	0
+GO:0051725	protein de-ADP-ribosylation	P	6	6	1	0
+GO:0051731	polynucleotide 5'-hydroxyl-kinase activity	F	6	5	1	0
+GO:0051734	ATP-dependent polynucleotide 5'-hydroxyl-kinase activity	F	7	6	1	0
+GO:0051908	double-stranded DNA 5'-3' DNA exonuclease activity	F	8	7	2	2
+GO:0052008	symbiont-mediated disruption of host cellular anatomical structure	P	4	4	16	0
+GO:0052009	symbiont-mediated disruption of host cell wall	P	6	6	6	0
+GO:0052026	symbiont-mediated perturbation of host transcription	P	7	6	2	0
+GO:0052031	symbiont-mediated perturbation of host defense response	P	5	4	12	0
+GO:0052111	symbiont-mediated disruption of host anatomical structure	P	3	3	16	0
+GO:0052167	symbiont-mediated perturbation of host innate immune response	P	7	6	11	0
+GO:0052170	symbiont-mediated suppression of host innate immune response	P	8	7	11	11
+GO:0052200	symbiont-mediated response to host defenses	P	6	4	8	0
+GO:0052553	symbiont-mediated perturbation of host immune response	P	6	5	12	0
+GO:0052562	symbiont-mediated suppression of host immune response	P	7	6	12	0
+GO:0052572	response to host immune response	P	7	5	8	0
+GO:0055086	nucleobase-containing small molecule metabolic process	P	5	4	20	0
+GO:0060255	regulation of macromolecule metabolic process	P	5	5	8	0
+GO:0060567	negative regulation of termination of DNA-templated transcription	P	11	7	1	1
+GO:0061134	peptidase regulator activity	F	3	3	2	0
+GO:0061695	transferase complex, transferring phosphorus-containing groups	C	4	4	5	0
+GO:0061731	ribonucleoside-diphosphate reductase activity	F	5	5	11	0
+GO:0061749	forked DNA-dependent helicase activity	F	7	4	2	2
+GO:0061775	cohesin loader activity	F	4	4	2	2
+GO:0061783	peptidoglycan muralytic activity	F	2	2	20	0
+GO:0065007	biological regulation	P	1	1	19	0
+GO:0070403	NAD+ binding	F	8	5	2	2
+GO:0071103	DNA conformation change	P	6	6	7	0
+GO:0071554	cell wall organization or biogenesis	P	2	2	15	0
+GO:0071840	cellular component organization or biogenesis	P	2	2	13	0
+GO:0071897	DNA biosynthetic process	P	7	6	49	2
+GO:0072354	histone H3T3 kinase activity	F	8	5	1	1
+GO:0072371	histone H2AS121 kinase activity	F	8	6	1	1
+GO:0072518	Rho-dependent protein serine/threonine kinase activity	F	7	5	1	1
+GO:0072521	purine-containing compound metabolic process	P	3	3	2	0
+GO:0072522	purine-containing compound biosynthetic process	P	4	4	2	0
+GO:0072524	pyridine-containing compound metabolic process	P	3	3	2	0
+GO:0072525	pyridine-containing compound biosynthetic process	P	4	4	2	0
+GO:0072527	pyrimidine-containing compound metabolic process	P	3	3	8	0
+GO:0072528	pyrimidine-containing compound biosynthetic process	P	4	4	5	0
+GO:0072529	pyrimidine-containing compound catabolic process	P	4	4	1	0
+GO:0075136	response to host	P	5	3	8	0
+GO:0075523	viral translational frameshifting	P	4	2	2	2
+GO:0075713	establishment of integrated proviral latency	P	4	3	1	1
+GO:0080090	regulation of primary metabolic process	P	5	5	8	0
+GO:0090304	nucleic acid metabolic process	P	5	4	127	0
+GO:0090407	organophosphate biosynthetic process	P	5	4	18	0
+GO:0097367	carbohydrate derivative binding	F	2	2	79	1
+GO:0097747	RNA polymerase activity	F	5	4	6	0
+GO:0098003	viral tail assembly	P	4	2	37	31
+GO:0098004	virus tail fiber assembly	P	5	2	6	6
+GO:0098009	viral terminase, large subunit	C	3	3	5	5
+GO:0098015	virus tail	C	2	2	69	16
+GO:0098021	viral capsid, decoration	C	3	2	5	5
+GO:0098024	virus tail, fiber	C	3	2	17	17
+GO:0098025	virus tail, baseplate	C	3	2	30	30
+GO:0098026	virus tail, tube	C	3	2	3	3
+GO:0098027	virus tail, sheath	C	3	2	4	4
+GO:0098542	defense response to other organism	P	5	3	6	0
+GO:0098669	superinfection exclusion	P	2	2	4	4
+GO:0098670	entry receptor-mediated virion attachment to host cell	P	8	5	1	1
+GO:0098671	adhesion receptor-mediated virion attachment to host cell	P	8	5	16	16
+GO:0098672	symbiont-mediated suppression of host CRISPR-cas system	P	6	5	1	1
+GO:0098673	symbiont-mediated suppression of host DNA replication	P	6	5	3	3
+GO:0098772	molecular function regulator activity	F	1	1	16	0
+GO:0098813	nuclear chromosome segregation	P	5	4	2	0
+GO:0098932	symbiont entry into host cell via disruption of host cell wall peptidoglycan	P	7	4	6	6
+GO:0098933	symbiont-mediated disruption of host cell envelope	P	5	5	16	0
+GO:0098994	symbiont entry into host cell via disruption of host cell envelope	P	6	4	16	16
+GO:0098996	symbiont entry into host cell via disruption of host cell glycocalyx	P	6	4	10	10
+GO:0099000	symbiont genome ejection through host cell envelope, contractile tail mechanism	P	7	3	9	9
+GO:0099002	symbiont genome ejection through host cell envelope, short tail mechanism	P	7	3	13	13
+GO:0099015	degradation of host chromosome by virus	P	9	2	5	5
+GO:0099016	symbiont-mediated evasion of DNA end degradation by host	P	11	9	1	1
+GO:0099018	symbiont-mediated evasion of host restriction-modification system	P	11	9	7	7
+GO:0099046	clearance of foreign intracellular nucleic acids	P	7	5	6	0
+GO:0106274	NAD+-protein-arginine ADP-ribosyltransferase activity	F	6	4	9	9
+GO:0106310	protein serine kinase activity	F	6	4	1	1
+GO:0110154	RNA decapping	P	7	6	1	1
+GO:0110165	cellular anatomical structure	C	1	1	56	0
+GO:0120543	macromolecular conformation isomerase activity	F	3	3	28	0
+GO:0120545	nucleic acid conformation isomerase activity	F	4	4	28	0
+GO:0140078	class I DNA-(apurinic or apyrimidinic site) endonuclease activity	F	7	4	1	1
+GO:0140096	catalytic activity, acting on a protein	F	2	2	24	0
+GO:0140097	catalytic activity, acting on DNA	F	3	3	91	0
+GO:0140098	catalytic activity, acting on RNA	F	3	3	13	0
+GO:0140104	molecular carrier activity	F	1	1	2	0
+GO:0140110	transcription regulator activity	F	1	1	11	0
+GO:0140291	peptidyl-glutamate ADP-deribosylation	P	7	7	1	1
+GO:0140299	molecular sensor activity	F	2	2	2	0
+GO:0140313	molecular sequestering activity	F	1	1	1	1
+GO:0140535	intracellular protein-containing complex	C	2	2	5	0
+GO:0140537	transcription regulator activator activity	F	3	3	4	4
+GO:0140546	defense response to symbiont	P	6	4	6	0
+GO:0140584	chromatin extrusion motor activity	F	6	4	2	2
+GO:0140597	protein carrier activity	F	2	2	2	0
+GO:0140612	DNA damage sensor activity	F	3	3	2	0
+GO:0140640	catalytic activity, acting on a nucleic acid	F	2	2	153	0
+GO:0140657	ATP-dependent activity	F	1	1	50	0
+GO:0140658	ATP-dependent chromatin remodeler activity	F	5	3	2	0
+GO:0140664	ATP-dependent DNA damage sensor activity	F	5	3	2	2
+GO:0140665	ATP-dependent H3-H4 histone complex chaperone activity	F	7	4	2	2
+GO:0140674	ATP-dependent histone chaperone activity	F	6	3	2	0
+GO:0140677	molecular function activator activity	F	2	2	8	0
+GO:0140678	molecular function inhibitor activity	F	2	2	6	4
+GO:0140713	histone chaperone activity	F	3	3	2	0
+GO:0140789	histone phosphatase activity	F	7	4	1	0
+GO:0140791	histone H2AXS139 phosphatase activity	F	8	5	1	1
+GO:0140823	histone H2BS36 kinase activity	F	8	5	1	1
+GO:0140849	ATP-dependent H2AZ histone chaperone activity	F	7	4	2	2
+GO:0140855	histone H3S57 kinase activity	F	8	5	1	1
+GO:0140857	histone H3T45 kinase activity	F	8	5	1	1
+GO:0140911	pore-forming activity	F	1	1	6	6
+GO:0140993	histone modifying activity	F	3	3	2	0
+GO:0140994	RNA polymerase II CTD heptapeptide repeat modifying activity	F	3	3	1	0
+GO:0140995	histone H2A kinase activity	F	7	5	1	0
+GO:0140996	histone H3 kinase activity	F	7	5	1	0
+GO:0140997	histone H4 kinase activity	F	7	5	1	0
+GO:0140998	histone H2B kinase activity	F	7	5	1	0
+GO:0141003	histone H2AX kinase activity	F	7	5	1	0
+GO:0141043	symbiont-mediated evasion of host innate immune response	P	9	7	8	0
+GO:0141060	disruption of anatomical structure in another organism	P	2	2	42	0
+GO:0141061	disruption of cell in another organism	P	3	3	32	0
+GO:0141177	symbiont-mediated evasion of recognition by host innate immune effector	P	10	8	8	0
+GO:0141187	nucleic acid biosynthetic process	P	6	5	60	0
+GO:0141188	nucleic acid catabolic process	P	6	5	1	0
+GO:0180004	RNA polymerase II CTD heptapeptide repeat Y1 phosphatase activity	F	9	5	1	1
+GO:0180005	RNA polymerase II CTD heptapeptide repeat T4 phosphatase activity	F	9	5	1	1
+GO:0180006	RNA polymerase II CTD heptapeptide repeat S2 phosphatase activity	F	9	5	1	1
+GO:0180007	RNA polymerase II CTD heptapeptide repeat S5 phosphatase activity	F	9	5	1	1
+GO:0180008	RNA polymerase II CTD heptapeptide repeat S7 phosphatase activity	F	9	5	1	1
+GO:1901072	glucosamine-containing compound catabolic process	P	6	6	1	0
+GO:1901135	carbohydrate derivative metabolic process	P	3	3	35	1
+GO:1901136	carbohydrate derivative catabolic process	P	4	4	20	0
+GO:1901137	carbohydrate derivative biosynthetic process	P	4	4	13	0
+GO:1901265	nucleoside phosphate binding	F	2	2	98	0
+GO:1901292	nucleoside phosphate catabolic process	P	7	5	1	0
+GO:1901293	nucleoside phosphate biosynthetic process	P	7	5	18	0
+GO:1901363	heterocyclic compound binding	F	3	3	98	0
+GO:1901681	sulfur compound binding	F	2	2	1	0
+GO:1901698	response to nitrogen compound	P	3	3	2	0
+GO:1901700	response to oxygen-containing compound	P	3	3	2	0
+GO:1902494	catalytic complex	C	2	2	14	0
+GO:1902679	negative regulation of RNA biosynthetic process	P	9	8	3	0
+GO:1903509	liposaccharide metabolic process	P	5	4	1	0
+GO:1904047	S-adenosyl-L-methionine binding	F	5	3	1	1
+GO:1990204	oxidoreductase complex	C	3	3	4	0
+GO:1990234	transferase complex	C	3	3	5	0
+GO:1990238	double-stranded DNA endonuclease activity	F	6	4	2	2
+GO:1990244	histone H2AT120 kinase activity	F	8	5	1	1
+GO:1990404	NAD+-protein mono-ADP-ribosyltransferase activity	F	5	3	9	0
+GO:1990439	MAP kinase serine/threonine phosphatase activity	F	8	5	1	1
+GO:1990518	single-stranded 3'-5' DNA helicase activity	F	8	5	2	2
+GO:2001141	regulation of RNA biosynthetic process	P	8	7	7	0

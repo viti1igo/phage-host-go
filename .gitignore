@@ -1,0 +1,13 @@
+# Downloads and local runs (see README)
+data/
+__pycache__/
+.DS_Store
+._*
+
+# Plain copies of the gzipped results, and tables rebuilt from them
+results/gaborieau/host/go/pairs.tsv
+results/gaborieau/host/go/gene_terms.tsv
+results/gaborieau/host/go/rollup_*.tsv
+results/gaborieau/host/graph/genes_host.tsv
+results/gaborieau/host/graph/hosts/*.graphml
+results/gaborieau/host/graph/export/hosts/

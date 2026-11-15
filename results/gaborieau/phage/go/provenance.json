@@ -1,0 +1,28 @@
+{
+  "command": [
+    "scripts/go_extract.py",
+    "run",
+    "data/phage_bakta/by_phage",
+    "data/go_data/gaborieau/go_bakta_phage",
+    "--format",
+    "bakta",
+    "--genomes",
+    "data/phage_bakta/matrix_phages.csv",
+    "--obo",
+    "data/go_data/go-basic.obo"
+  ],
+  "date": "2026-11-15",
+  "input": "data/phage_bakta/by_phage",
+  "input_sha256": "b82d3bca3441be82ee8c7686e9edbee12fe11bcea56e8fd3aa2cf19e72cdeedb",
+  "format": "bakta",
+  "go_release": "releases/2026-07-26",
+  "genes_with_go": 2093,
+  "pairs": 6622,
+  "pairs_dropped_retired_or_unknown": 99,
+  "genes_left_without_go": 0,
+  "genes_read": 12059,
+  "genomes_file": "data/phage_bakta/matrix_phages.csv",
+  "genomes_listed": 96,
+  "genomes_read": 96,
+  "genomes_without_bakta": []
+}
