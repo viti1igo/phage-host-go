@@ -58,22 +58,48 @@ python scripts/go_rollup.py data/go-basic.obo pairs.tsv out --slim goslim_metage
 
 Options: `--depth longest|shortest` (how levels are counted), `--relations is_a|is_a+part_of|is_a+part_of+regulates`, and `--genes NAME=CSV` (repeatable) to summarise a group of genes listed in a CSV with a `gene` column.
 
-## `phage_go_fill.py`
+## `uniref90_go_fill.py`
 
 ```bash
-python scripts/phage_go_fill.py phages.tsv out_folder
+python scripts/uniref90_go_fill.py data/phage/bakta/phages.tsv results/gaborieau/phage/by_phage            # one table over many genomes
+python scripts/uniref90_go_fill.py data/bakta_hosts data/bakta_hosts_filled --genomes matrix.csv --unisave  # one run per genome
 ```
 
-Reads one Bakta `.tsv` covering many phages and writes `out_folder/<phage>/<phage>.tsv`, the layout `go_extract.py` and `go_graph.py --bakta` read. A CDS that Bakta gave GO keeps it. A CDS without GO but with a UniRef90 cluster gets the GO terms of the cluster's representative UniProtKB entry, looked up on `rest.uniprot.org` 400 at a time. Representatives that are UniParc entries (`UPI…`) have no GO. Also writes `go_source.tsv` (per CDS: `bakta`, `uniref90` or `none`) and `uniref90_go_cache.tsv`, which later runs reuse instead of asking UniProt again.
+Bakta GO comes first. A CDS without GO but with a UniRef90 cluster gets the GO terms of the cluster's representative UniProtKB entry, looked up on `rest.uniprot.org` 400 at a time. Representatives that are UniParc entries (`UPI…`) have no GO. The input is one Bakta `.tsv` covering many genomes, split by its Sequence Id column (each phage is one sequence), or a folder of `<genome>/<genome>.tsv` runs. Writes `<genome>/<genome>.tsv` (the layout `go_extract.py` and `go_graph.py --bakta` read), `go_source.tsv` (per CDS: genome, locus tag, `bakta`, `uniref90` or `none`, and the representative) and `uniref90_go_cache.tsv`, which later runs reuse instead of asking UniProt again.
+
+`--unisave`: some representatives have been deleted from UniProtKB, so the lookup finds no GO for them. With this flag, their GO comes from their last version in UniSave (`rest.uniprot.org/unisave`), one entry at a time, 8 in parallel, cached in `unisave_go_cache.tsv`. That GO is as old as the deletion, so `go_source.tsv` marks it `uniref90_unisave`.
+
+## `go_protein_list.py`
+
+```bash
+python scripts/go_protein_list.py data/bakta_hosts_filled proteins.tsv --genomes matrix.csv
+```
+
+Lists every distinct protein, merged across genomes the way `go_graph.py --bakta` merges them (Bakta gene name, else UniRef90 cluster, else genome and locus tag). One row per protein, most widespread first: product, UniRef90 cluster, CDS, genomes, CDS with GO, GO counts per source (when the folder has `go_source.tsv`), and the GO IDs. The `protein` column is what `go_graph.py --select` takes.
 
 ## `go_graph.py`
 
 ```bash
-python scripts/go_graph.py data/go-basic.obo data/bakta_hosts out --bakta --genomes interaction_matrix.csv              # writes NAME=host
+python scripts/go_graph.py data/go-basic.obo data/bakta_hosts_filled out --bakta --genomes interaction_matrix.csv              # writes NAME=host
 python scripts/go_graph.py data/go-basic.obo results/gaborieau/phage/by_phage out --bakta --name phage --genomes matrix_phages.csv
 ```
 
 With `--bakta`, a gene is the Bakta gene name, else its UniRef90 cluster, else the feature's own ID; copies across genomes merge. For each group NAME it writes `genes_NAME.tsv`, `subtrees_NAME.tsv`, `nodes_NAME.tsv`, `edges_NAME.tsv` and `graph_NAME.graphml`, plus one graph per genome in `NAMEs/` and a summary `NAMEs.tsv`. `--relations` picks the GO edges (default `is_a+part_of`).
+
+**A chosen set of proteins from many genomes.** `--select FILE` draws only the proteins the file names, as one graph NAME with no per-genome graphs. One entry per line; only the first word counts and `#` starts a comment:
+
+```
+ompC                    # the gene ompC in every genome
+DIJ07|lamB              # lamB in DIJ07 only
+001-023|BDJMFO_00011    # one protein, by genome and locus tag
+UniRef90_P76616         # a gene without a Bakta name, by its UniRef90 cluster
+```
+
+```bash
+python scripts/go_graph.py data/go-basic.obo data/bakta_hosts_filled out/receptors --bakta --select receptors.txt --name receptors
+```
+
+Entries that match no protein with GO are printed. In `nodes_NAME.tsv`, `genes_through` counts merged genes (ompC from 50 genomes is one gene), `proteins_through` the proteins themselves, and `genomes_through` the genomes they come from.
 
 Without `--bakta`, the input is a gene-to-GO table and `--group NAME=CSV` (repeatable) names the genes of each graph; labels that differ only in a `_N` suffix (`gene=dnaA_2`) merge into one gene.
 

@@ -24,10 +24,10 @@ Not included: the genomes (they are in the [Gaborieau repository](https://github
 | | Hosts | Phages |
 |---|---|---|
 | Genomes | 401 (402 in the interaction matrix; PDP21 has no Bakta run) | 96 (97 genomes; 411_P3 is not in the matrix) |
-| Genes with GO | 1,398,127 of 2,011,629 Bakta features | 2,093 CDS. Over all 97 phages, 2,101 of 11,600 CDS (18%): 1,089 from Bakta, 1,012 from UniRef90 |
-| Unique genes in the graph | 6,197 | 534 |
-| GO terms / edges in the merged graph | 5,407 / 8,330 | 672 / 972 |
-| Deepest terms checked against QuickGO | 3,681: 3,115 match, 566 differ | 293: 254 match, 30 differ by cross-domain edges, 9 by GO release |
+| Genes with GO | 1,592,238 of 2,011,629 Bakta features. Of 1,872,544 CDS: 1,387,047 GO from Bakta, 52,622 from UniRef90, 141,489 from UniSave (84.4% in all) | 2,093 CDS. Over all 97 phages, 2,101 of 11,600 CDS (18%): 1,089 from Bakta, 1,012 from UniRef90 |
+| Unique genes in the graph | 17,594 | 534 |
+| GO terms / edges in the merged graph | 5,714 / 8,769 | 672 / 972 |
+| Deepest terms checked against QuickGO | 3,963: 3,379 match, 584 differ | 293: 254 match, 30 differ by cross-domain edges, 9 by GO release |
 
 GO release 2026-07-26 (`go-basic.obo`), edges `is_a` and `part_of`. A QuickGO difference is expected where QuickGO uses `go-plus`, which keeps edges between GO domains that `go-basic` leaves out, or a newer GO release.
 
@@ -41,16 +41,16 @@ GO release 2026-07-26 (`go-basic.obo`), edges `is_a` and `part_of`. A QuickGO di
 
 ```mermaid
 flowchart LR
-    G["Genomes<br/>(Gaborieau repo)"] --> BH["Bakta<br/>per host"]
-    G --> PH["Pharokka<br/>all phages"] --> BP["Bakta --regions<br/>Pharokka's CDS"] --> F["phage_go_fill.py<br/>+ UniRef90 GO"]
-    BH --> E["go_extract.py<br/>clean GO, summaries"]
+    G["Genomes<br/>(Gaborieau repo)"] --> BH["Bakta<br/>per host"] --> FH["uniref90_go_fill.py<br/>+ UniRef90 / UniSave GO"]
+    G --> PH["Pharokka<br/>all phages"] --> BP["Bakta --regions<br/>Pharokka's CDS"] --> F["uniref90_go_fill.py<br/>+ UniRef90 GO"]
+    FH --> E["go_extract.py<br/>clean GO, summaries"]
     F --> E
     E --> GR["go_graph.py<br/>graph per dataset and genome"]
     GR --> X["go_graph_export.py<br/>Gephi / Cytoscape"]
     GR --> Q["go_check_quickgo.py<br/>check vs QuickGO"]
 ```
 
-**Where the GO terms come from.** Bakta matches each protein to a UniRef90 cluster (at least 90% identity and 80% coverage) and writes the cluster's GO terms in the `DbXrefs` column of its `.tsv`. Bakta gives few phage proteins GO terms, so for a phage CDS without Bakta GO, `phage_go_fill.py` takes the GO terms of its UniRef90 cluster's representative UniProtKB entry. UniRef50 is not used. Pharokka is used only to find the phage genes (PHANOTATE); it does not give GO terms.
+**Where the GO terms come from.** Bakta matches each protein to a UniRef90 cluster (at least 90% identity and 80% coverage) and writes the cluster's GO terms in the `DbXrefs` column of its `.tsv`. For a CDS without Bakta GO, `uniref90_go_fill.py` takes the GO terms of its UniRef90 cluster's representative UniProtKB entry. For hosts, `--unisave` also covers representatives that were deleted from UniProtKB, taking the GO of their last version in UniSave; that GO is as old as the deletion, and `go_source.tsv` marks it `uniref90_unisave`. UniRef50 is not used. Pharokka is used only to find the phage genes (PHANOTATE); it does not give GO terms.
 
 **How the terms are cleaned.** Alternate GO IDs become their current ID; retired or unknown IDs are dropped and counted in `provenance.json`. A gene's deepest terms are its listed terms that are not an ancestor of another listed term. Its subtree is its listed terms plus every ancestor through `is_a` and `part_of`.
 
@@ -89,11 +89,12 @@ done
 GO per gene, then the graphs. `--genomes` keeps the strains in the first column of the interaction matrix:
 
 ```bash
-python scripts/go_extract.py run data/bakta_hosts $R/host/go --format bakta --genomes $G/interactions/interaction_matrix.csv --obo $OBO
-python scripts/go_graph.py $OBO data/bakta_hosts $R/host/graph --bakta --genomes $G/interactions/interaction_matrix.csv
+python scripts/uniref90_go_fill.py data/bakta_hosts data/bakta_hosts_filled --genomes $G/interactions/interaction_matrix.csv --unisave
+python scripts/go_extract.py run data/bakta_hosts_filled $R/host/go --format bakta --genomes $G/interactions/interaction_matrix.csv --obo $OBO
+python scripts/go_graph.py $OBO data/bakta_hosts_filled $R/host/graph --bakta --genomes $G/interactions/interaction_matrix.csv
 ```
 
-`go_extract.py` takes about 15 minutes over 401 genomes.
+`uniref90_go_fill.py --unisave` asks UniSave one entry at a time (about 34,000 for the hosts, a few hours; cached). `go_extract.py` takes about 15 minutes over 401 genomes.
 
 ### 2. Phages
 
@@ -109,7 +110,7 @@ pharokka.py -i $P/all_phages.fna -o $P/pharokka -d data/pharokka_db/pharokka_v1.
 # Bakta on those CDS, all phages in one run so its database loads once (about 18 minutes)
 bakta --db data/bakta_db/db --regions $P/regions.gff --prefix phages --output $P/bakta --threads 8 --keep-contig-headers --skip-plot --force $P/all_phages.fna
 # One folder per phage; CDS without Bakta GO get their UniRef90 cluster's GO from UniProt (needs internet, cached)
-python scripts/phage_go_fill.py $P/bakta/phages.tsv $R/phage/by_phage
+python scripts/uniref90_go_fill.py $P/bakta/phages.tsv $R/phage/by_phage
 # The phages of the interaction matrix (its header row)
 (echo phage; head -1 $G/interactions/interaction_matrix.csv | tr -d '\r' | tr ';' '\n' | tail -n +2) > $R/phage/matrix_phages.csv
 python scripts/go_extract.py run $R/phage/by_phage $R/phage/go --format bakta --genomes $R/phage/matrix_phages.csv --obo $OBO
@@ -141,7 +142,7 @@ Column 8 of `genes_*.tsv` is the `quickgo_chart` link, which holds each gene's d
 
 ### From the shipped results, without Bakta
 
-The hosts' Bakta output is not in this repository, so `go_graph.py` can't be rerun for hosts from here. Their GO terms are: `pairs.tsv.gz` has every gene–GO pair as Bakta wrote it, and the summaries can be rebuilt from it:
+The hosts' Bakta output is not in this repository, so `go_graph.py` can't be rerun for hosts from here. Their GO terms are: `pairs.tsv.gz` has every gene–GO pair after the UniRef90 and UniSave fill, and the summaries can be rebuilt from it:
 
 ```bash
 gunzip -k $R/host/go/pairs.tsv.gz
@@ -168,6 +169,8 @@ This also writes `rollup_goslim_metagenomics.tsv` and `rollup_level_3.tsv`, whic
 | `graph/deepest_terms.txt`, `quickgo_check_deepest_NAME.csv` | The terms checked against QuickGO, and the result per term |
 | `graph/export/` | Gephi `.gexf` and Cytoscape `.cyjs` of the merged graph |
 | `phage/by_phage/go_source.tsv` | Per phage CDS: GO from `bakta`, `uniref90` or `none`, and its UniRef90 representative |
+| `host/go_source.tsv.gz` | Per host CDS: GO from `bakta`, `uniref90`, `uniref90_unisave` or `none`, and its UniRef90 representative |
+| `host/proteins.tsv.gz` | One row per distinct host protein (61,579): product, UniRef90 cluster, CDS and genomes, GO counts per source, GO IDs |
 
 ## Scripts
 
@@ -176,7 +179,8 @@ This also writes `rollup_goslim_metagenomics.tsv` and `rollup_level_3.tsv`, whic
 | `go_dag.py` | Library: reads `go-basic.obo` (parents, ancestors, depths, levels, GO slims, alternate IDs) |
 | `go_extract.py` | GO per gene from Bakta; also from protein FASTA (DIAMOND against Swiss-Prot), eggNOG-mapper, InterProScan or a plain table. Cleans IDs, writes provenance, calls `go_rollup.py` |
 | `go_rollup.py` | GO slim and level summaries, and the branch measurements |
-| `phage_go_fill.py` | Splits one Bakta run over many phages into one table per phage and fills GO from UniRef90 |
+| `uniref90_go_fill.py` | Fills GO for CDS without Bakta GO from their UniRef90 representative (UniProt, or UniSave with `--unisave`); splits one Bakta run over many phages into one table per phage |
+| `go_protein_list.py` | Every distinct protein across the genomes, how many genomes have it, its GO and where the GO came from |
 | `go_graph.py` | Unique genes, subtrees, merged and per-genome graphs |
 | `go_graph_export.py` | GraphML to Gephi and Cytoscape files with a layout |
 | `go_check_quickgo.py` | Our ancestors against QuickGO's |
